@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d9355e415e.js" crossorigin="anonymous"></script>
+    <title>Webdev</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="#"> About </a></li>
+                        <li><a href="#"> Syllabus </a></li>
+                    </ul>
+                    <a href="index.html"><img src="image/Logo.svg" alt="logo"></a>
+                    <ul>
+                        <li><a href="#"> Projects </a></li>
+                        <li><a href="#"> FAQ </a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1> YOUR LIFE IS WEBDEV </h1>
+                <p> Whatever the approach to development may be, the final program must satisfy some fundamental
+                    properties </p>
+                <div> <button class="button"> GET STARTED </button></div>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="image/Mail.svg" alt="icon"></a>
+                <a href="#"><img src="image/Facebook.svg" alt="icon"></a>
+                <a href="#"><img src="image/Instagram.svg" alt="icon"></a>
+                <a href="#"><img src="image/Telegram.svg" alt="icon"></a>
+            </div>
+        </header>
+    </div>
+    <!-- JavaScript for Toogle Menu -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-1200px";
+        }
+    </script>
+    <!-- SECTION 2 -->
+    <div class="container">
+        <main>
+            <section class="desctription-section">
+                <div class="info-div">
+                    <h1> Rappresent your idea with
+                        a smart Design</h1>
+                    <p> Tasks accompanying and related to programming include: testing, debugging, source code
+                        maintenance,
+                        implementation of build systems, and management of derived artifacts, such as the machine code
+                        of
+                        computer programs. </p>
+                    <div> <button class="button"> GET STARTED </button></div>
+                </div>
+                <img src="image/content-image-1.svg" alt="image">
+            </section>
+            <section class="slider">
+                <div class="slider-wraper">
+                    <div class="community">
+                        <div>
+                            <img src="image/Community-logo.svg" alt="profile-pic">
+                        </div>
+                        <h2> OUR COMMUNITY </h2>
+                        <p> A hacker is any skilled computer expert that uses their technical knowledge to overcome a
+                            problem,
+                            but it can also mean a security hacker in common language </p>
+                    </div>
+                    <div class="slider-div">
+                        <img src="image/image.svg" alt="image">
+                        <img src="image/image-1.svg" alt="image">
+                        <img src="image/image-2.svg" alt="image">
+                    </div>
+                    <div class="slider-div1">
+                        <div>
+                            <img src="image/image.svg" alt="image">
+                            <img src="image/image-1.svg" alt="image">
+                        </div>
+                        <div>
+                            <img class="my-images" src="image/image-3.jpg" alt="image">
+                            <img class="my-images" src="image/image-4.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section class="desctription-section">
+                <img src="image/content-image-2.svg" alt="image">
+                <div class="info-div">
+                    <h1> Rappresent your idea with
+                        a smart Design</h1>
+                    <p> Tasks accompanying and related to programming include: testing, debugging, source code
+                        maintenance,
+                        implementation of build systems, and management of derived artifacts, such as the machine code
+                        of
+                        computer programs. </p>
+                    <div> <button class="button"> LEARN MORE </button></div>
+                </div>
+            </section>
+            <section class="sign-up">
+                <div>
+                    <h2> SIGN UP FOR NEWSLETTER</h2>
+                    <form>
+                        <input placeholder="E-mail" type="email">
+                        <button><img src="image/check-icon.svg" alt="icon"></button>
+                    </form>
+                </div>
+            </section>
+            <section class="DownloadApp">
+                <h2> DOWNLOAD THE APP </h2>
+                <p> Machine code was the language of early programs, written in the instruction set of the particular
+                    machine, often in binary notation. </p>
+                <div class="app-buttons">
+                    <div>
+                        <button class="app-buttontxt"> APPLE STORE </button>
+                        <button class="app-button"> <img src="image/icon-apple.svg" alt="icon"> </button>
+                        
+                    </div>
+                    <div>
+                        <button class="app-buttontxt"> PLAY MARKET </button>
+                        <button class="app-button"> <img src="image/icon-android.svg" alt="icon"> </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-div">
+            <div>
+                <p><a class="footer-p" href="#"> Credits </a></p>
+                <div class="lines"></div>
+                <p><a class="footer-p" href="#"> Privacy </a> </p>
+                <div class="lines"></div>
+                <p><a class="footer-p" href="#"> Our teams </a></p>
+            </div>
+            <img src="image/Logo.svg" alt="logo">
+            <p class="footer-date"> by TonYem for RSS at 2020 </p>
+        </div>
+    </footer>
+</body>
+
+</html>
