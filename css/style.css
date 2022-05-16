@@ -406,6 +406,9 @@ nav {
     .community p{
         font-size: 12px;
     }
+    .sign-up {
+        height: 46vh;
+    }
     .sign-up div h2 {
         font-size: 19px;   
     }
