@@ -105,11 +105,11 @@ nav {
     background: transparent;
     background-color: #00AFDB;
     cursor: pointer;
+    transition: 1s;
 }
 .button:hover {
     border: 1px solid #00AFDB;
     background: rgba(0, 0, 0, 0);
-    transition: 1s;
     color: #00AFDB;
 }
 
@@ -201,6 +201,8 @@ nav {
         left: 0;
     }
     .fa-solid {
+        width: 12px;
+        height: 12px;
         display: block;
         cursor: pointer;;
     }
@@ -253,11 +255,13 @@ nav {
     color: #4E4E4E; 
 
 }
+.info-div button{
+    transition: 1s;
+}
 .info-div button:hover {
     border: 1px solid #00AFDB;
     background: rgba(0, 0, 0, 0);
     color: #00AFDB;
-    transition: 1s;
 }
 
 .info-div {
@@ -293,27 +297,78 @@ nav {
 }
 
 /* Slider */
-
 .slider {
-    width: 82.4%;
-    padding-top: 120px;
     display: flex;
+    width: 100%;
+}
 
+
+.slider ul {
+    display: flex;
     align-items: center;
-    float: right;
+    gap: 15px;
 }
-.slider-wraper{
-    display: flex; 
-    justify-content: space-between;
+
+.slider ul {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border: none;
+    align-items: center;
+    transform: translate(-50%, 0);
 }
+
+.slick-track {
+    display: flex;
+    padding: 80px 0;
+}
+
+.slider ul li {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.slider ul li button {
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #039ED6;
+    height: 6px;
+    transition: all 0.3s ease-in;
+}
+
+.slick-active button {
+    width: 32px;
+    height: 8px;
+    border: none;
+    background-color: #039ED6;
+    border-radius: 5px;
+
+}
+
+.slide {
+    width: 100%;
+}
+.slide:nth-child(2) img {
+    width: 100%;
+}
+.slide:nth-child(3) img {
+    width: 100%;
+}
+.slide:nth-child(4) img {
+    width: 100%;
+}
+.slide:nth-child(5) img {
+    width: 100%;
+}
+
 
 .community {
-    flex-basis: 19%;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     text-align: center;
-    align-items: center;
 }
 
 .community h2 {
@@ -331,22 +386,7 @@ nav {
     line-height: 140%;
     color: #4E4E4E; 
 }
-.slider-div1 {
-    display: none;
-}
-.slider-div {
-    display: flex;
-    gap: 30px;
-}
 
-
-.my-images {
-    width: 407px;
-    height: 244px;
-}
-.clear {
-    clear: right;
-}
 /*  */
 @media (max-width: 600px) {
     .button {
@@ -360,43 +400,14 @@ nav {
 /*  */
 @media (max-width: 1380px) {
     
-    .slider {
-        width: 90%;
-        justify-content: center;
-        float: none;
-        margin: auto;
-        padding-top: 0px;
-    }
-    .slider-wraper {
-        flex-direction: column;
-    }
     .community {
         width: 50%;
         margin: auto;
         margin-bottom: 20px;
         flex-direction: column;
     }
-    .slider-div {
-        flex-direction: column;
-    }
-    .slider-div {
-        display: none;
-    }
-    .slider-div1 {
-        display: flex;
-        flex-direction: column;
-        
-        gap: 20px;
-    }
-    .slider-div1 div {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    .slider-div1 img{
-        width: 45%;
-        height: 45%;
-    }
+
+
 }
 
 @media (max-width: 720px) {
@@ -415,7 +426,7 @@ nav {
     .sign-up div input {
         border: none;
         background-color: #FFFFFF;
-        padding: 10px 114px 10px 16px;
+        padding: 10px 0 10px 16px;
         font-size: 13px;
     }
     
@@ -462,9 +473,11 @@ nav {
     color: #FFFFFF;
 }
 .sign-up input {
+    max-width: 600px;
+    width: 100%;
     border: none;
     background-color: #FFFFFF;
-    padding: 13px 144px 13px 24px;
+    padding: 13px 0 13px 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -491,9 +504,25 @@ nav {
 .sign-up button {
     border: none;
     background: #00AFDB;
-    padding: 14px 24px;
+    padding: 4px 16px;
     cursor: pointer;
+    transition: 0.5s;
 
+}
+
+.sign-up button svg {
+    width: 32px;
+    height: 32px;
+}
+.sign-up button svg > path {
+    transition: 0.5s;
+}
+
+.sign-up button:hover svg > path {
+    fill: #00AFDB;
+}
+.sign-up button:hover  {
+    background-color: #FFFFFF;
 }
 
 .sign-up form {
@@ -553,8 +582,13 @@ nav {
     padding: 13px 21px;
     cursor: pointer;
 }
-.app-buttons div {
+.app-buttons a {
     display: flex;
+    transition: 1s all ease-in-out;
+}
+.app-buttons a:hover {
+    display: flex;
+    transform: scale(1.2);
 }
 /* FOOTER */
 footer {

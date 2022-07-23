@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script src="https://kit.fontawesome.com/d9355e415e.js" crossorigin="anonymous"></script>
     <title>Webdev</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container">
             <nav>
                 <div class="nav-links" id="navLinks">
                     <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
@@ -42,8 +43,157 @@
                 <a href="#"><img src="image/Instagram.svg" alt="icon"></a>
                 <a href="#"><img src="image/Telegram.svg" alt="icon"></a>
             </div>
-        </header>
+    </header>
     </div>
+    <!-- SECTION 2 -->
+    <div class="container">
+        <main>
+            <div class="container">
+                <section class="desctription-section">
+                    <div class="info-div">
+                        <h1> Rappresent your idea with
+                            a smart Design</h1>
+                        <p> Tasks accompanying and related to programming include: testing, debugging, source code
+                            maintenance,
+                            implementation of build systems, and management of derived artifacts, such as the machine
+                            code
+                            of
+                            computer programs. </p>
+                        <div> <button class="button"> GET STARTED </button></div>
+                    </div>
+                    <img src="image/content-image-1.svg" alt="image">
+                </section>
+                <div class="slider">
+                    <div class="slide">
+                        <div class="community">
+                            <div>
+                                <img src="image/Community-logo.svg" alt="profile-pic">
+                            </div>
+                            <h2> OUR COMMUNITY </h2>
+                            <p> A hacker is any skilled computer expert that uses their technical knowledge to overcome
+                                a
+                                problem,
+                                but it can also mean a security hacker in common language </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="image/image.svg" alt="image">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="image/image-1.svg" alt="image">
+                    </div>
+
+                    <div class="slide">
+                        <img src="image/image.svg" alt="image">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="image/image-1.svg" alt="image">
+                    </div>
+                </div>
+            </div>
+                <section class="desctription-section">
+                    <img src="image/content-image-2.svg" alt="image">
+                    <div class="info-div">
+                        <h1> Rappresent your idea with
+                            a smart Design</h1>
+                        <p> Tasks accompanying and related to programming include: testing, debugging, source code
+                            maintenance,
+                            implementation of build systems, and management of derived artifacts, such as the machine
+                            code
+                            of
+                            computer programs. </p>
+                        <div> <button class="button"> LEARN MORE </button></div>
+                    </div>
+                </section>
+                <section class="sign-up">
+                    <div>
+                        <h2> SIGN UP FOR NEWSLETTER</h2>
+                        <form>
+                            <input placeholder="E-mail" type="email">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                                        fill="white">
+                                    </path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+                <section class="DownloadApp">
+                    <h2> DOWNLOAD THE APP </h2>
+                    <p> Machine code was the language of early programs, written in the instruction set of the
+                        particular
+                        machine, often in binary notation. </p>
+                    <div class="app-buttons">
+                        <a href="#">
+                            <button class="app-buttontxt"> APPLE STORE </button>
+                            <button class="app-button"> <img src="image/icon-apple.svg" alt="icon"> </button>
+                        </a>
+                        <a href="#">
+                            <button class="app-buttontxt"> PLAY MARKET </button>
+                            <button class="app-button"> <img src="image/icon-android.svg" alt="icon"> </button>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-div">
+                <div>
+                    <p><a class="footer-p" href="#"> Credits </a></p>
+                    <div class="lines"></div>
+                    <p><a class="footer-p" href="#"> Privacy </a> </p>
+                    <div class="lines"></div>
+                    <p><a class="footer-p" href="#"> Our teams </a></p>
+                </div>
+                <a href="#"><img src="image/Logo.svg" alt="logo"></a>
+                <p class="footer-date "> by TonYem for RSS at 2020. Clon L.Bakuridze</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDER -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.slider').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 920,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        });
+    </script>
     <!-- JavaScript for Toogle Menu -->
     <script>
         let navLinks = document.getElementById("navLinks");
@@ -55,107 +205,6 @@
             navLinks.style.right = "-200px";
         }
     </script>
-    <!-- SECTION 2 -->
-    <div class="container">
-        <main>
-            <section class="desctription-section">
-                <div class="info-div">
-                    <h1> Rappresent your idea with
-                        a smart Design</h1>
-                    <p> Tasks accompanying and related to programming include: testing, debugging, source code
-                        maintenance,
-                        implementation of build systems, and management of derived artifacts, such as the machine code
-                        of
-                        computer programs. </p>
-                    <div> <button class="button"> GET STARTED </button></div>
-                </div>
-                <img src="image/content-image-1.svg" alt="image">
-            </section>
-            <section class="slider">
-                <div class="slider-wraper">
-                    <div class="community">
-                        <div>
-                            <img src="image/Community-logo.svg" alt="profile-pic">
-                        </div>
-                        <h2> OUR COMMUNITY </h2>
-                        <p> A hacker is any skilled computer expert that uses their technical knowledge to overcome a
-                            problem,
-                            but it can also mean a security hacker in common language </p>
-                    </div>
-                    <div class="slider-div">
-                        <img src="image/image.svg" alt="image">
-                        <img src="image/image-1.svg" alt="image">
-                        <img src="image/image-2.svg" alt="image">
-                    </div>
-                    <div class="slider-div1">
-                        <div>
-                            <img src="image/image.svg" alt="image">
-                            <img src="image/image-1.svg" alt="image">
-                        </div>
-                        <div>
-                            <img class="my-images" src="image/image-3.jpg" alt="image">
-                            <img class="my-images" src="image/image-4.jpg" alt="image">
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </section>
-            <section class="desctription-section">
-                <img src="image/content-image-2.svg" alt="image">
-                <div class="info-div">
-                    <h1> Rappresent your idea with
-                        a smart Design</h1>
-                    <p> Tasks accompanying and related to programming include: testing, debugging, source code
-                        maintenance,
-                        implementation of build systems, and management of derived artifacts, such as the machine code
-                        of
-                        computer programs. </p>
-                    <div> <button class="button"> LEARN MORE </button></div>
-                </div>
-            </section>
-            <section class="sign-up">
-                <div>
-                    <h2> SIGN UP FOR NEWSLETTER</h2>
-                    <form>
-                        <input placeholder="E-mail" type="email">
-                        <button><img src="image/check-icon.svg" alt="icon"></button>
-                    </form>
-                </div>
-            </section>
-            <section class="DownloadApp">
-                <h2> DOWNLOAD THE APP </h2>
-                <p> Machine code was the language of early programs, written in the instruction set of the particular
-                    machine, often in binary notation. </p>
-                <div class="app-buttons">
-                    <div>
-                        <button class="app-buttontxt"> APPLE STORE </button>
-                        <button class="app-button"> <img src="image/icon-apple.svg" alt="icon"> </button>
-                        
-                    </div>
-                    <div>
-                        <button class="app-buttontxt"> PLAY MARKET </button>
-                        <button class="app-button"> <img src="image/icon-android.svg" alt="icon"> </button>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-    <div class="container">
-    <footer>
-
-        <div class="footer-div">
-            <div>
-                <p><a class="footer-p" href="#"> Credits </a></p>
-                <div class="lines"></div>
-                <p><a class="footer-p" href="#"> Privacy </a> </p>
-                <div class="lines"></div>
-                <p><a class="footer-p" href="#"> Our teams </a></p>
-            </div>
-            <img src="image/Logo.svg" alt="logo">
-            <p class="footer-date "> by TonYem for RSS at 2020. Clon L.Bakuridze</p>
-        </div>
-    </footer>
-</div>
 </body>
 
 </html>
